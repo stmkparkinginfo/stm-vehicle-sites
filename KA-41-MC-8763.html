@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>STMK Parking Info - KA-41-MC-8763</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #fafaf7;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+        .container {
+            width: 100vw;
+            min-height: 100vh;
+            background: #fff;
+            border-radius: 0;
+            box-shadow: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .logo {
+            display: block;
+            margin: 4vw auto 3vw auto;
+            width: 38vw;
+            max-width: 180px;
+            min-width: 64px;
+            height: auto;
+        }
+        h1 {
+            color: #256029;
+            text-align: center;
+            font-size: 6vw;
+            font-weight: 900;
+            margin: 0 0 5vw 0;
+            letter-spacing: 0.03em;
+        }
+        table {
+            width: 88vw;
+            margin: 0 auto 12vw auto;
+            border-collapse: collapse;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            font-size: 4vw;
+        }
+        th, td {
+            padding: 4vw 3vw;
+            text-align: left;
+            border-bottom: 1px solid #e5ebea;
+        }
+        th {
+            background: #eef9f4;
+            color: #195c2f;
+            font-weight: 600;
+            width: 48vw;
+            font-size: 4vw;
+        }
+        td {
+            background: #f6fbfa;
+            color: #222;
+            width: 40vw;
+            font-size: 4vw;
+        }
+        .active {
+            color: #068d27;
+            font-weight: bold;
+        }
+        @media (min-width: 620px) {
+            .container {
+                width: 540px;
+                margin: 40px auto 0 auto;
+                border-radius: 12px;
+                box-shadow: 0 2px 12px rgba(0,0,0,0.09);
+                display: block;
+                min-height: unset;
+            }
+            .logo {
+                width: 165px;
+                margin: 0 auto 24px auto;
+            }
+            h1 { font-size: 2rem; }
+            table { width: 100%; font-size: 1rem; margin-bottom: 28px; }
+            th, td { padding: 10px 7px; font-size: 1rem; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img class="logo" src="https://github.com/stmkparkinginfo/stm-vehicle-sites/blob/main/STMK_Parking.png?raw=true" alt="STMK Logo">
+        <h1>STMK Parking Info</h1>
+        <table>
+            <tr>
+                <th>Vehicle Number</th>
+                <td>KA-41-MC-8763</td>
+            </tr>
+            <tr>
+                <th>Flat Number</th>
+                <td>GF-008</td>
+            </tr>
+            <tr>
+                <th>Owner Name</th>
+                <td>R*****a C</td>
+            </tr>
+            <tr>
+                <th>Vehicle Type</th>
+                <td>4W</td>
+            </tr>
+            <tr>
+                <th>2W Count</th>
+                <td>2</td>
+            </tr>
+            <tr>
+                <th>4W Count</th>
+                <td>1</td>
+            </tr>
+            <tr>
+                <th>Status</th>
+                <td class="active">Active</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
