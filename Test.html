@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>STMK Parking Info - KA-05-LP-7832</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -12,59 +13,80 @@
         }
         .container {
             max-width: 540px;
-            margin: 40px auto 0 auto;
+            margin: 32px auto 0 auto;
             background: #fff;
             border-radius: 12px;
             box-shadow: 0 2px 12px rgba(0,0,0,0.09);
-            padding: 32px 24px 24px 24px;
+            padding: 24px 16px 20px 16px;
         }
         .logo {
             display: block;
-            margin: 0 auto 20px auto;
-            max-width: 165px;
+            margin: 0 auto 16px auto;
+            width: 90%;
+            max-width: 160px;
+            height: auto;
         }
         h1 {
             color: #256029;
             text-align: center;
-            margin-bottom: 28px;
+            margin-bottom: 18px;
+            font-size: 1.5rem;
         }
         table {
             width: 100%;
             border-collapse: collapse;
-            margin-top: 12px;
+            margin-top: 8px;
         }
         th, td {
-            padding: 10px;
+            padding: 10px 7px;
             text-align: left;
+            font-size: 1rem;
         }
         th {
             background: #eef9f4;
             color: #195c2f;
             font-weight: 600;
             border-bottom: 2px solid #e5ebea;
+            width: 45%;
         }
         td {
             background: #f6fbfa;
             border-bottom: 1px solid #e5ebea;
             color: #222;
+            width: 55%;
         }
         .active {
             color: #068d27;
             font-weight: bold;
         }
-        @media (max-width:600px) {
+        @media (max-width: 550px) {
             .container {
-                padding: 12px;
+                max-width: 98%;
+                padding: 8px 2vw 14px 2vw;
+                margin-top: 12px;
             }
+            h1 {
+                font-size: 1.15rem;
+                margin-bottom: 10px;
+            }
+            .logo {
+                max-width: 110px;
+            }
+            th, td {
+                font-size: 0.94rem;
+                padding: 8px 5px;
+            }
+        }
+        @media (max-width: 400px) {
             table, th, td {
-                font-size: 15px;
+                font-size: 0.85rem;
+                padding: 6px 3px;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- Logo linked from GitHub repository -->
         <img class="logo" src="https://github.com/stmkparkinginfo/stm-vehicle-sites/blob/main/STMK_Parking.png?raw=true" alt="STMK Logo">
         <h1>STMK Parking Info</h1>
         <table>
